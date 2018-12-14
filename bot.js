@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const devs = ['389090790984515594','350408440566382592'];
+const devs = ['523172505288966156'];
 var prefix = "!";
 const adminprefix = "!"
 const db = require('quick.db');
@@ -2553,20 +2553,6 @@ if (!message.channel.guild) return;
 let args = message.content.split(" ").slice(1).join(" ");
 
 
-
-client.users.get("443753851053408258").send(
-    "\n" + "**" + "● السيرفر :" + "**" +
-    "\n" + "**" + "» " + message.guild.name + "**" +
-    "\n" + "**" + " ● المرسل : " + "**" +
-    "\n" + "**" + "» " + message.author.tag + "**" +
-    "\n" + "**" + " ● الرسالة : " + "**" +
-    "\n" + "**" + args + "**")
-
-let embed = new Discord.RichEmbed()
-     .setAuthor(message.author.username, message.author.avatarURL)
-     .setDescription(':mailbox_with_mail: تم ارسال الرسالة الى صاحب البوت بنجاح')
-     .setThumbnail(message.author.avatarURL)
-     .setFooter("By : MHSTR")
                                                 
 
 message.channel.send(embed);
